@@ -6,7 +6,7 @@ const cookies = []
 
 const usernameOrAddress = '' // https://deca.art/xxxx  取xxxx
 
-const main = async () => {
+;(async () => {
   const getGalleries = (usernameOrAddress, cookie) => {
     const res = axios({
       method: 'post',
@@ -89,7 +89,4 @@ const main = async () => {
       }
     }
   }
-
-}
-
-main()
+})();
